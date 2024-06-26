@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+
+#sobre{
+background-color: variaveis.$primary-bg-color;
+}
+
+.section__new__title {
+   margin-top: 0;
+  padding: 16px;
+   color: variaveis.$primary-text-color;
+   text-align: center;
+   background-color: variaveis.$secondary-bg-color;
+
+   
+   &__p {
+      color: variaveis.$primary-text-color;
+      margin-left: 2px;
+      padding: 15px;
+
+      &__img{
+         width: 100px;
+      }
+     
+   }
+   &__img {
+      display: flex;
+      padding: 20px;
+
+    
+   }
+}
