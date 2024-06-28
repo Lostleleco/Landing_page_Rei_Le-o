@@ -1,5 +1,4 @@
-
-Em andamento...
+Nesse projeto pude explorar um pouco mais da metodologia BEM, e acrescentar um pouco de javaScript.
 
 
 
