@@ -1,35 +1,293 @@
-@media (max-width: 768px) {
 
-    .hero__content img{
-       size: 50px;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--primary-bg-color);
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+}
+
+.navigation__links {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    margin: 5px 10px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/fundo_rei_leao.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero__content {
+    padding: 20px;
+    text-align: center;
+}
+
+.hero h1, .hero h5 {
+    display: none;
+}
+
+.hero__content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Section New (Sobre) */
+.section__new {
+    padding: 20px;
+    background-color: var(--secondary-bg-color);
+}
+
+.section__new__title {
+    margin-top: 0;
+    padding: 16px;
+    color: var(--primary-text-color);
+    text-align: center;
+}
+
+.section__new__title__img {
+    display: flex;
+    flex-direction: column; /* Altera para coluna em todos os tamanhos */
+    align-items: center;
+}
+
+.section__new__title__img img {
+    max-width: 100%;
+    height: auto;
+}
+
+.section__new__title__p {
+    margin-top: 10px;
+    padding: 15px;
+    color: var(--primary-text-color);
+    text-align: justify;
+}
+
+/* Resumo Section */
+.resumo {
+    padding: 20px;
+    background-color: var(--tertiary-bg-color);
+}
+
+.resumo_title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.display {
+    display: flex;
+    flex-direction: column; /* Garante que os elementos fiquem em coluna */
+    align-items: center;
+}
+
+.resumo_text {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.resumo img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    text-align: center;
+}
+
+.footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer__section {
+    flex: 1 0 50%; /* Ajuste conforme necessário */
+    padding: 10px;
+}
+
+.footer__title {
+    margin-bottom: 10px;
+}
+
+.footer__list {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__item {
+    margin-bottom: 5px;
+}
+
+.footer__link {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.footer__bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer__copyright {
+    font-size: 14px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: inline;
     }
 
     .navigation {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: inline;
+        list-style: none;
         margin-top: 10px;
     }
 
     .navigation__links {
         margin: 5px 0;
+       
     }
 
     .hero {
-        padding: 10px;
-        height: auto;
+        background-image: url('../images/fundo_rei_leao_celular.png');
+        background-size: cover;
+        background-position: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #fff;
     }
 
     .hero__content {
+        display: none;
+    }
+
+    .hero__content img {
+        max-width: 50%;
+        height: 0;
+    }
+
+    .section__new {
+        padding: 20px;
+        background-color: var(--secondary-bg-color);
+    }
+
+    .section__new__title {
+        margin-top: 0;
+        padding: 16px;
+        color: var(--primary-text-color);
         text-align: center;
-    
     }
 
     .section__new__title__img {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
+    .section__new__title__img img {
+        max-width: 100%;
+        height: auto;
+    }
+
     .section__new__title__p {
+        margin-top: 10px;
+        padding: 15px;
+        color: var(--primary-text-color);
         text-align: justify;
+    }
+
+    .resumo {
+        padding: 20px;
+        background-color: var(--tertiary-bg-color);
+    }
+
+    .resumo_title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .display {
+        display: block;
+        text-align: center;
+    }
+
+    .resumo_text {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
+
+    .resumo img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .footer {
+        background-color: var(--primary-bg-color);
+        color: var(--primary-text-color);
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__section {
+        flex: 1;
+        padding: 10px 0;
+    }
+
+    .footer__title {
+        margin-bottom: 10px;
+    }
+
+    .footer__list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer__item {
+        margin-bottom: 5px;
+    }
+
+    .footer__link {
+        color: var(--primary-text-color);
+        text-decoration: none;
+    }
+
+    .footer__bottom {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .footer__copyright {
+        font-size: 14px;
     }
 }
