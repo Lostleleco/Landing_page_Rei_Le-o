@@ -1,6 +1,19 @@
 @use 'variaveis';
 @use 'hero';
 @use 'newSection';
+@use 'resumo';
+@use 'footer';
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 5s ease-out, transform 5s ease-out;
+
+    &.visible {
+        opacity: 2;
+        transform: translateX(10px);
+    }
+}
 
 body {
     font-family: Arial, sans-serif;
